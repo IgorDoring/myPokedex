@@ -1,0 +1,50 @@
+:host{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.pokemon{
+  display: flex;
+  width: calc(49% - 2.5rem);
+  height: calc(10em - 40px);
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  position: relative;
+}
+
+.pokestatus h2{
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pokestatus ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.pokestatus ul li{
+  background: #efefef;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 4rem;
+  margin-bottom: 5px;
+}
+
+.pokeimage{
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokeimage img{
+  max-width: 5rem;
+}
