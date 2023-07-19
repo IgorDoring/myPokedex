@@ -1,0 +1,234 @@
+main{
+  margin-top: 2.5rem;
+}
+
+main .pokemonNames{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 75px;
+  padding: 0 1.875rem;
+}
+
+main h1{
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+main h2{
+  position: absolute;
+  font-weight: 100;
+  top: 0;
+  font-size: 3.75rem;
+  color: rgba(255,255,255,0.1);
+}
+
+h1,
+h2 {
+/*//Remove Bug Animation*/
+-webkit-animation-fill-mode: none !important;
+  animation-fill-mode: none !important;
+}
+
+main .pokemonStatus{
+  position: relative;
+}
+
+main .pokemonStatus img{
+  position: absolute;
+  top: -5.625rem;
+  left: 1.875rem;
+  max-width: 8.125rem;
+  z-index: 1;
+/*Remove Bug Animation*/
+
+-webkit-animation-fill-mode: none !important;
+  animation-fill-mode: none !important;
+}
+
+main .pokemonStatistics{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  min-height: 43.9vh;
+  margin-top: 0.625rem;
+
+  padding: 6.875rem 2.18rem 1.87rem;
+  border-radius: 3.125rem 3.125rem 0 0;
+}
+
+.pokemonStatistics h3{
+  margin-bottom: 1.4rem;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.pokemonStatistics ol li{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  line-height: 130%;
+
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 1.25rem 0;
+  border-radius: 0.75rem;
+  margin-top: 1.4rem;
+
+  text-decoration: none;
+}
+
+.btn-primary{
+  color: white;
+  background: var(--primary-color);
+}
+.btn-secondary{
+  color: white;
+  background: var(--secondary-color);
+}
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media (max-width: 420px){
+  main{
+    margin-top: 0.6rem;
+  }
+
+  .pokemonNames h1{
+    font-size: 1.4rem;
+  }
+  .pokemonNames h2{
+    font-size: 2.1rem;
+  }
+
+  .pokemonStatus{
+    position: relative;
+  }
+
+  .pokemonStatus img{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    max-width: 6.25rem;
+  }
+
+  main .pokemonStatistics{
+    min-height: 57vh;
+    padding-top: 3.6rem;
+  }
+}
